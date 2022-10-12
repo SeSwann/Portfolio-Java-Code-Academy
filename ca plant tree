@@ -1,0 +1,38 @@
+// Define your tree class in this file!
+public class Tree {
+  public static void main (String[] args) {
+//this task will introduce myself and plant a tree
+System.out.println("Hi there, I'm Sarah and I'm blitzing my brain with code for funsies, surprisingly It's going well and soon will take over my life");
+System.out.println("");
+System.out.println("Today we're going to take over the world!!....ahem..no? this isn't a 90's kids show? ah well, today folks we'll instead be planting a...now wait for it... A TREE!!");
+System.out.println("");
+System.out.println("Riveting stuff i know but please try to contain yourself until the end of the show, now without further ado..");
+System.out.println("");
+System.out.println("");
+System.out.println("     *");
+System.out.println("     **");
+System.out.println("    ****");
+System.out.println("   *******");
+System.out.println("  *********");
+System.out.println("      *");
+System.out.println("      *");
+
+
+  }
+}
+
+
+Hi there, I'm Sarah and I'm blitzing my brain with code for funsies, surprisingly It's going well and soon will take over my life
+
+Today we're going to take over the world!!....ahem..no? this isn't a 90's kids show? ah well, today folks we'll instead be planting a...now wait for it... A TREE!!
+
+Riveting stuff i know but please try to contain yourself until the end of the show, now without further ado..
+
+
+     *
+     **
+    ****
+   *******
+  *********
+      *
+      *
