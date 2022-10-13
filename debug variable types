@@ -1,0 +1,25 @@
+public class Mess {
+	public static void main(String[] args) {   
+		int year = 2001;
+    String title = "Shrek";
+    char genre = 'C';
+    double runtime = 1.58;
+    boolean isPG = true;
+	}
+}
+
+
+$ javac Mess.java
+Mess.java:4: error: incompatible types: String cannot be converted to int
+    int title = "Shrek";
+                ^
+1 error
+$ javac Mess.java
+Mess.java:4: error: cannot find symbol
+    int title = new string ("Shrek");
+                    ^
+  symbol:   class string
+  location: class Mess
+1 error
+$ javac Mess.java
+$ javac Mess.java
