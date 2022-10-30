@@ -1,0 +1,46 @@
+public class Calculator{
+ 
+  public Calculator(){
+
+  }
+  //Addition method:
+  public int add(int a, int b){
+    int result = a + b;
+    return result;
+  }
+  //Subtraction method:
+  public int subtract( int a, int b){
+    int result = a - b;
+    return result;
+  }
+  //Multiplication method:
+  public int multiply(int a, int b){
+    int result = a * b;
+    return result;
+  }
+  //Division method:
+  public int divide(int a, int b){
+    int result = a / b;
+    return result;
+  }
+  //Remainder after division(modulo) method
+  public int modulo(int a, int b){ 
+    int result = a % b;
+    return result;
+  }
+    
+
+//main method
+public static void main(String [] args) {
+  Calculator myCalculator = new Calculator();
+  int addition = myCalculator.add(5,7);
+  System.out.println(addition);
+  System.out.println(myCalculator.subtract(45,11));
+
+  }
+}
+
+Output:
+
+12
+34
