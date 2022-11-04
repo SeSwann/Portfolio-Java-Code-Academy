@@ -1,0 +1,58 @@
+public class Droid {
+  String name;
+  int batteryLevel;
+  String manufactureDate;
+
+  public Droid(String droidName, int charge, String dateCreated) { 
+    name = droidName;
+    batteryLevel = charge;
+    charge = 100;
+    manufactureDate = dateCreated;
+  }
+
+  public void energyReport() {
+    System.out.println( name + "'s battery level is currently " + batteryLevel + "/100");
+  }
+
+  public void energyTransfer(Droid recipientDroid, int energyAmount) {
+    batteryLevel -= energyAmount;
+    recipientDroid.batteryLevel += energyAmount;
+    System.out.println("Transfered " + energyAmount + "% battery to the other droid" );
+  }
+  
+  public void performTask(String name) {
+    System.out.println("Codey is performing task: " + name);
+    batteryLevel -= 10;
+  }
+
+  public String toString() {
+    return "Hello I'm the droid: " + name;
+  }
+
+ 
+  public static void main(String[] args) {
+    Droid Codey = new Droid("Codey", 100, "01112022");
+    System.out.println(Codey);
+    Codey.performTask("dancing");
+    //batteryLevel starts 100, now 90
+    System.out.println(Codey.batteryLevel);
+    Codey.performTask("Do a flip!");
+    Codey.performTask("pass butter");
+    Codey.energyReport();
+    //energy transfer
+    Droid Bb8 = new Droid("Bb8", 30, "04112022");
+    Codey.energyTransfer(Bb8, 30);
+
+
+  }
+}
+
+Output:
+
+Hello I'm the droid: Codey
+Codey is performing task: dancing
+90
+Codey is performing task: Do a flip!
+Codey is performing task: pass butter
+Codey's battery level is currently 70/100
+Transfered 30% battery to the other droid
