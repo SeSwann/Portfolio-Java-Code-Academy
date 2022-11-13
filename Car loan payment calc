@@ -1,0 +1,30 @@
+public class CarLoan {
+
+//define loan variable values
+	public static void main(String[] args) {
+    int carLoan = 10000; 
+    int loanLength = 3;
+    int interestRate = 5;
+    int downPayment = 2000;
+//taking out a loan
+    if (loanLength <= 0 || interestRate <= 0) {
+      System.out.println("Error! You must take out a valid car loan. Loan length and interest rate must be more than 0");
+    } else if (downPayment >= carLoan) {
+      System.out.println("You qualify to buy this car outright, no loan required.");
+    } else {
+      //loan balance and interest calc
+      int remainingBalance = carLoan - downPayment;
+      int months = loanLength * 12;
+      int monthlyBalance = remainingBalance / months;
+      int interest = (monthlyBalance * interestRate) / 100;
+      int monthlyPayment = monthlyBalance + interest;
+      System.out.println(monthlyPayment);
+    }
+	
+
+	}
+}
+
+output:
+
+233
