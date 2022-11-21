@@ -1,0 +1,42 @@
+import java.util.ArrayList;
+
+class List {
+  
+  public static void main(String[] args) {
+   //create ArrayList organise
+   ArrayList<String> organiseList = new ArrayList<String>();
+
+    //add activities to organiseList
+    organiseList.add("Store cables into boxes");
+    organiseList.add("Bin unused belongings");
+    organiseList.add("Store loose items into drawers");
+
+    //create ArrayList rearrange
+    ArrayList<String> rearrangeList = new ArrayList<String>();
+
+      //add activites to rearrangeList
+      rearrangeList.add("Take out shelf");
+      rearrangeList.add("Take out drawers");
+      rearrangeList.add("Turn shelf and put back");
+      rearrangeList.add("Put back drawers");
+
+    //print both lists
+    System.out.println(organiseList);
+    System.out.println(rearrangeList);
+  }
+  
+}
+
+output:
+
+$ javac List.java
+List.java:24: error: bad operand types for binary operator '+'
+    System.out.println(organiseList + rearrangeList);
+                                    ^
+  first type:  ArrayList<String>
+  second type: ArrayList<String>
+1 error
+$ javac List.java
+$ java List
+[Store cables into boxes, Bin unused belongings, Store loose items into drawers]
+[Take out shelf, Take out drawers, Turn shelf and put back, Put back drawers]
